@@ -2,6 +2,8 @@
 
 A collection of useful developer utilities in a single command-line application with both CLI and TUI (Terminal User Interface) modes.
 
+> **⚠️ Note**: This project is currently in active development. Features and APIs may change between versions.
+
 ## Features
 
 DevTools provides the following utilities:
