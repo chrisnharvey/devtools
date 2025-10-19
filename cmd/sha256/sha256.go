@@ -7,8 +7,7 @@ import (
 	"github.com/chrisnharvey/devtools/pkg/field"
 )
 
-type Sha256 struct {
-}
+type Sha256 struct{}
 
 func New() *Sha256 {
 	return &Sha256{}

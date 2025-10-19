@@ -21,7 +21,7 @@ func (a *App) createCobraCommand(cmd Command) *cobra.Command {
 		case field.String, field.TextArea, field.File:
 			cobraCmd.Flags().String(f.Name, "", f.Description)
 			if f.Required {
-				cobraCmd.MarkFlagRequired(f.Name)
+				_ = cobraCmd.MarkFlagRequired(f.Name)
 			}
 		case field.Bool:
 			cobraCmd.Flags().Bool(f.Name, false, f.Description)

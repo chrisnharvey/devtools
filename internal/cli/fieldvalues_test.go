@@ -53,7 +53,10 @@ func TestFieldValues_GetString(t *testing.T) {
 			if tt.flagName != "nonexistent-flag" {
 				flagSet.String(tt.flagName, "", "test flag")
 				if tt.flagVal != "" {
-					flagSet.Set(tt.flagName, tt.flagVal)
+					err := flagSet.Set(tt.flagName, tt.flagVal)
+					if err != nil {
+						t.Error(err)
+					}
 				}
 			}
 
@@ -105,7 +108,10 @@ func TestFieldValues_GetFile(t *testing.T) {
 			if tt.flagName != "nonexistent-flag" {
 				flagSet.String(tt.flagName, "", "test file flag")
 				if tt.flagVal != "" {
-					flagSet.Set(tt.flagName, tt.flagVal)
+					err := flagSet.Set(tt.flagName, tt.flagVal)
+					if err != nil {
+						t.Error(err)
+					}
 				}
 			}
 
@@ -162,10 +168,15 @@ func TestFieldValues_GetBool(t *testing.T) {
 			if tt.flagName != "nonexistent-flag" {
 				flagSet.Bool(tt.flagName, false, "test bool flag")
 				if tt.setFlag {
+					var err error
 					if tt.flagVal {
-						flagSet.Set(tt.flagName, "true")
+						err = flagSet.Set(tt.flagName, "true")
 					} else {
-						flagSet.Set(tt.flagName, "false")
+						err = flagSet.Set(tt.flagName, "false")
+					}
+
+					if err != nil {
+						t.Error(err)
 					}
 				}
 			}

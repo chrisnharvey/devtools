@@ -23,5 +23,4 @@ func (a *App) runTui(c *cobra.Command, args []string) error {
 	tapp.SetRoot(menu, true)
 
 	return tapp.Run()
-	//return nil
 }
