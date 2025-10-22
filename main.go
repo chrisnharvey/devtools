@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/chrisnharvey/devtools/cmd/charcount"
 	"github.com/chrisnharvey/devtools/cmd/jsonminify"
 	"github.com/chrisnharvey/devtools/cmd/jsonprettify"
 	"github.com/chrisnharvey/devtools/cmd/sha256"
@@ -12,6 +13,7 @@ import (
 func main() {
 	a := app.NewApp()
 
+	a.Add(charcount.New())
 	a.Add(sha256.New())
 	a.Add(urlencode.New())
 	a.Add(urldecode.New())
