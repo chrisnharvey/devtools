@@ -9,6 +9,10 @@ import (
 
 type UrlDecode struct{}
 
+func (u *UrlDecode) GetName() string {
+	return "URL Decode"
+}
+
 func New() *UrlDecode {
 	return &UrlDecode{}
 }

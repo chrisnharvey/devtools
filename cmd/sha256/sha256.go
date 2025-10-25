@@ -9,6 +9,10 @@ import (
 
 type Sha256 struct{}
 
+func (s *Sha256) GetName() string {
+	return "SHA256 Hash"
+}
+
 func New() *Sha256 {
 	return &Sha256{}
 }

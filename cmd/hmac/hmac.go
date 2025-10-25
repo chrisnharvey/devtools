@@ -14,6 +14,10 @@ import (
 
 type HMAC struct{}
 
+func (h *HMAC) GetName() string {
+	return "HMAC Generator"
+}
+
 func New() *HMAC {
 	return &HMAC{}
 }

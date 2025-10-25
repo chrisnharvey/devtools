@@ -13,6 +13,10 @@ import (
 
 type ULID struct{}
 
+func (u *ULID) GetName() string {
+	return "ULID Generator"
+}
+
 func New() *ULID {
 	return &ULID{}
 }

@@ -11,6 +11,10 @@ import (
 
 type JSONToYAML struct{}
 
+func (j *JSONToYAML) GetName() string {
+	return "JSON to YAML"
+}
+
 func New() *JSONToYAML {
 	return &JSONToYAML{}
 }

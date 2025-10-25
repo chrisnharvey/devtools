@@ -9,6 +9,10 @@ import (
 
 type HTMLDecode struct{}
 
+func (h *HTMLDecode) GetName() string {
+	return "HTML Decode"
+}
+
 func New() *HTMLDecode {
 	return &HTMLDecode{}
 }

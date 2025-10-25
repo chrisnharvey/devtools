@@ -9,6 +9,10 @@ import (
 
 type JsonPrettify struct{}
 
+func (j *JsonPrettify) GetName() string {
+	return "JSON Prettify"
+}
+
 func New() *JsonPrettify {
 	return &JsonPrettify{}
 }

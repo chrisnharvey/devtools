@@ -9,6 +9,10 @@ import (
 
 type CharCount struct{}
 
+func (c *CharCount) GetName() string {
+	return "Character Count"
+}
+
 func New() *CharCount {
 	return &CharCount{}
 }

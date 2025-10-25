@@ -9,6 +9,10 @@ import (
 
 type Base64Decode struct{}
 
+func (b *Base64Decode) GetName() string {
+	return "Base64 Decode"
+}
+
 func New() *Base64Decode {
 	return &Base64Decode{}
 }

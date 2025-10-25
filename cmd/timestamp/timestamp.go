@@ -10,6 +10,10 @@ import (
 
 type Timestamp struct{}
 
+func (t *Timestamp) GetName() string {
+	return "Timestamp Converter"
+}
+
 func New() *Timestamp {
 	return &Timestamp{}
 }

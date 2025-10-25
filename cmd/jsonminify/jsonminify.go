@@ -9,6 +9,10 @@ import (
 
 type JsonMinify struct{}
 
+func (j *JsonMinify) GetName() string {
+	return "JSON Minify"
+}
+
 func New() *JsonMinify {
 	return &JsonMinify{}
 }

@@ -11,6 +11,10 @@ import (
 
 type UUID struct{}
 
+func (u *UUID) GetName() string {
+	return "UUID Generator"
+}
+
 func New() *UUID {
 	return &UUID{}
 }

@@ -9,6 +9,10 @@ import (
 
 type HTMLEncode struct{}
 
+func (h *HTMLEncode) GetName() string {
+	return "HTML Encode"
+}
+
 func New() *HTMLEncode {
 	return &HTMLEncode{}
 }

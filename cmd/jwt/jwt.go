@@ -11,6 +11,10 @@ import (
 
 type JWT struct{}
 
+func (j *JWT) GetName() string {
+	return "JWT Decoder"
+}
+
 func New() *JWT {
 	return &JWT{}
 }

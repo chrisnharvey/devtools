@@ -9,6 +9,10 @@ import (
 
 type UrlEncode struct{}
 
+func (u *UrlEncode) GetName() string {
+	return "URL Encode"
+}
+
 func New() *UrlEncode {
 	return &UrlEncode{}
 }
