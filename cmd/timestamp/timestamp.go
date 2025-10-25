@@ -68,7 +68,10 @@ func (t *Timestamp) Execute(values field.Values) error {
 	// Additional formats
 	fmt.Printf("ISO 8601: %s\n", parsedTime.UTC().Format("2006-01-02T15:04:05Z"))
 	fmt.Printf("RFC 3339: %s\n", parsedTime.UTC().Format(time.RFC3339))
-	fmt.Printf("Human readable: %s\n", parsedTime.UTC().Format("Monday, January 2, 2006 at 3:04:05 PM MST"))
+	fmt.Printf(
+		"Human readable: %s\n",
+		parsedTime.UTC().Format("Monday, January 2, 2006 at 3:04:05 PM MST"),
+	)
 
 	return nil
 }

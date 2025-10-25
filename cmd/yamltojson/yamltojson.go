@@ -4,9 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"gopkg.in/yaml.v3"
-
 	"github.com/chrisnharvey/devtools/pkg/field"
+	"gopkg.in/yaml.v3"
 )
 
 type YAMLToJSON struct{}

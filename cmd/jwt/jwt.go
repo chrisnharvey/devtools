@@ -25,7 +25,10 @@ func (j *JWT) Execute(values field.Values) error {
 	// Split the JWT into its three parts
 	parts := strings.Split(token, ".")
 	if len(parts) != 3 {
-		return fmt.Errorf("invalid JWT format: expected 3 parts separated by dots, got %d", len(parts))
+		return fmt.Errorf(
+			"invalid JWT format: expected 3 parts separated by dots, got %d",
+			len(parts),
+		)
 	}
 
 	// Decode header

@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/google/uuid"
-
 	"github.com/chrisnharvey/devtools/pkg/field"
+	"github.com/google/uuid"
 )
 
 type UUID struct{}

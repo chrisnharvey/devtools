@@ -6,9 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/oklog/ulid/v2"
-
 	"github.com/chrisnharvey/devtools/pkg/field"
+	"github.com/oklog/ulid/v2"
 )
 
 type ULID struct{}

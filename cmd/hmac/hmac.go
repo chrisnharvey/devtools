@@ -43,7 +43,10 @@ func (h *HMAC) Execute(values field.Values) error {
 	case "sha512":
 		hashFunc = sha512.New
 	default:
-		return fmt.Errorf("unsupported algorithm: %s (supported: md5, sha1, sha256, sha512)", algorithm)
+		return fmt.Errorf(
+			"unsupported algorithm: %s (supported: md5, sha1, sha256, sha512)",
+			algorithm,
+		)
 	}
 
 	// Generate HMAC
