@@ -24,7 +24,7 @@ func (s *Sha256) Execute(values field.Values) error {
 	return nil
 }
 
-func (s *Sha256) GetName() string {
+func (s *Sha256) GetUse() string {
 	return "sha256"
 }
 

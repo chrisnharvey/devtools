@@ -34,7 +34,7 @@ func (y *YAMLToJSON) Execute(values field.Values) error {
 	return nil
 }
 
-func (y *YAMLToJSON) GetName() string {
+func (y *YAMLToJSON) GetUse() string {
 	return "yamltojson"
 }
 

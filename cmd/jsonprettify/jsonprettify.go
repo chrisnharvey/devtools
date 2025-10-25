@@ -33,7 +33,7 @@ func (j *JsonPrettify) Execute(values field.Values) error {
 	return nil
 }
 
-func (j *JsonPrettify) GetName() string {
+func (j *JsonPrettify) GetUse() string {
 	return "jsonprettify"
 }
 

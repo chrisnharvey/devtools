@@ -3,7 +3,7 @@ package app
 import "github.com/chrisnharvey/devtools/pkg/field"
 
 type Command interface {
-	GetName() string
+	GetUse() string
 	GetDescription() string
 	GetFields() []field.Field
 	Execute(field.Values) error

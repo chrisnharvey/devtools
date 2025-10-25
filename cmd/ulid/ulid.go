@@ -36,7 +36,7 @@ func (u *ULID) Execute(values field.Values) error {
 	return nil
 }
 
-func (u *ULID) GetName() string {
+func (u *ULID) GetUse() string {
 	return "ulid"
 }
 

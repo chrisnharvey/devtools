@@ -33,7 +33,7 @@ func (j *JsonMinify) Execute(values field.Values) error {
 	return nil
 }
 
-func (j *JsonMinify) GetName() string {
+func (j *JsonMinify) GetUse() string {
 	return "jsonminify"
 }
 

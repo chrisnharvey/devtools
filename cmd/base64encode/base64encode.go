@@ -23,7 +23,7 @@ func (b *Base64Encode) Execute(values field.Values) error {
 	return nil
 }
 
-func (b *Base64Encode) GetName() string {
+func (b *Base64Encode) GetUse() string {
 	return "base64encode"
 }
 

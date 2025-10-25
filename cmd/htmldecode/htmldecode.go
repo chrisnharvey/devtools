@@ -23,7 +23,7 @@ func (h *HTMLDecode) Execute(values field.Values) error {
 	return nil
 }
 
-func (h *HTMLDecode) GetName() string {
+func (h *HTMLDecode) GetUse() string {
 	return "htmldecode"
 }
 

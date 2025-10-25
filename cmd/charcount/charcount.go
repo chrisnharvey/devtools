@@ -24,7 +24,7 @@ func (c *CharCount) Execute(values field.Values) error {
 	return nil
 }
 
-func (c *CharCount) GetName() string {
+func (c *CharCount) GetUse() string {
 	return "charcount"
 }
 

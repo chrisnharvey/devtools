@@ -23,7 +23,7 @@ func (h *HTMLEncode) Execute(values field.Values) error {
 	return nil
 }
 
-func (h *HTMLEncode) GetName() string {
+func (h *HTMLEncode) GetUse() string {
 	return "htmlencode"
 }
 

@@ -52,7 +52,7 @@ func (h *HMAC) Execute(values field.Values) error {
 	return nil
 }
 
-func (h *HMAC) GetName() string {
+func (h *HMAC) GetUse() string {
 	return "hmac"
 }
 

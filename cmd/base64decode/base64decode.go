@@ -26,7 +26,7 @@ func (b *Base64Decode) Execute(values field.Values) error {
 	return nil
 }
 
-func (b *Base64Decode) GetName() string {
+func (b *Base64Decode) GetUse() string {
 	return "base64decode"
 }
 

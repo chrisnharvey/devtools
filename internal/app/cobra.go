@@ -8,7 +8,7 @@ import (
 
 func (a *App) createCobraCommand(cmd Command) *cobra.Command {
 	cobraCmd := &cobra.Command{
-		Use:   cmd.GetName(),
+		Use:   cmd.GetUse(),
 		Short: cmd.GetDescription(),
 		RunE: func(c *cobra.Command, args []string) error {
 			values := cli.NewFieldValues(c.Flags())

@@ -69,7 +69,7 @@ func (t *Timestamp) Execute(values field.Values) error {
 	return nil
 }
 
-func (t *Timestamp) GetName() string {
+func (t *Timestamp) GetUse() string {
 	return "timestamp"
 }
 

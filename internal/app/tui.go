@@ -13,7 +13,7 @@ func (a *App) runTui(c *cobra.Command, args []string) error {
 
 	// Register all commands
 	for _, cmd := range a.comamnds {
-		menu.AddItem(cmd.GetName(), cmd.GetDescription(), 0, func() {
+		menu.AddItem(cmd.GetUse(), cmd.GetDescription(), 0, func() {
 			form := tui.NewForm(cmd, tapp)
 
 			form.Render()

@@ -50,7 +50,7 @@ func (u *UUID) Execute(values field.Values) error {
 	return nil
 }
 
-func (u *UUID) GetName() string {
+func (u *UUID) GetUse() string {
 	return "uuid"
 }
 

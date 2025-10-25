@@ -83,7 +83,7 @@ func (j *JWT) decodeJWTPart(part string) (string, error) {
 	return string(prettyJSON), nil
 }
 
-func (j *JWT) GetName() string {
+func (j *JWT) GetUse() string {
 	return "jwt"
 }
 

@@ -24,7 +24,7 @@ func (u *UrlEncode) Execute(values field.Values) error {
 	return nil
 }
 
-func (u *UrlEncode) GetName() string {
+func (u *UrlEncode) GetUse() string {
 	return "urlencode"
 }
 

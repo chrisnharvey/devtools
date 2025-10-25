@@ -27,7 +27,7 @@ func (u *UrlDecode) Execute(values field.Values) error {
 	return nil
 }
 
-func (u *UrlDecode) GetName() string {
+func (u *UrlDecode) GetUse() string {
 	return "urldecode"
 }
 
